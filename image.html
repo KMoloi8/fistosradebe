@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fistos Radebe</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+      color: #000000;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top grouping (same as main page) */
+    .top-bar {
+      height: 40px;
+      background: rgba(180, 40, 40, 0.15);
+      border-bottom: 1px solid rgba(180, 40, 40, 0.18);
+    }
+
+    /* Image section */
+    .image-page {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .image-page img {
+      max-width: 90%;
+      max-height: 70vh;
+      object-fit: contain;
+    }
+
+    .back-btn {
+      text-decoration: none;
+      padding: 12px 30px;
+      border: 2px solid #000;
+      color: #000;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: #b42828;
+      color: #fff;
+      border-color: #b42828;
+    }
+
+    /* Footer grouping */
+    footer {
+      background: rgba(180, 40, 40, 0.15);
+      border-top: 1px solid rgba(180, 40, 40, 0.18);
+      text-align: center;
+      padding: 14px 0;
+      font-size: 0.85rem;
+      color: #333;
+    }
+	
+	footer span {
+      color: var(--red);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar"></div>
+
+  <section class="image-page">
+    <img src="fistos1.jpeg" alt="Fistos Radebe visual" />
+    <a href="index.html" class="back-btn">BACK</a>
+  </section>
+
+  <footer>
+     &copy; <span>2026</span> <b>FISTOS RADEBE&#8482;</b>. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
